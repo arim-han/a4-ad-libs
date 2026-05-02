@@ -37,11 +37,11 @@ function playStory2() {
   var field09 = document.getElementById("field09").value;
   var story2 = [
     " In a " + field01 + " color, " ,
-    " draw a series of " + field02 + " at the " + field03 + " of the paper. ",
-    field03 + " it, a/an " + field04 + " drawn shape with " + field05 + " sides.",
-    field06 + " your paper.",
+    " Draw a series of " + field02 + " at the " + field03 + " of the paper. ",
+    field04 + " it, a/an " + field05 + " drawn shape with " + field06 + " sides.",
+    field07 + " your paper.",
     " Change to a different writing instrument, ",
-    "At a blank part of the paper, " + field07 + " one element on the page and " + field08 + " to another. ",
+    "At a blank part of the paper, " + field08 + " one element on the page and " + field09 + " to another. ",
 ];
 
 localStorage.setItem("myStory", JSON.stringify(story2));
@@ -57,11 +57,11 @@ function playStory3() {
   var field06 = document.getElementById("field06").value;
   var story3 = [
     " Pick up a " + field01 + ".",
-    " Write or draw 'A4' using only " + field02 + " .",
+    " Write or draw A4 using only " + field02 + " .",
     " Turn the page " + field03 + " degrees.", 
-    " In an analogous color, write or draw 'AD' using a single " + field04 + " " + field05 + ".",
+    " In an analogous color, write or draw AD using a single " + field04 + " " + field05 + ".",
     " Once more, turn the page " + field06 + " degrees.", 
-    " In a third analogous color, write or draw 'LIBS', using the writing instrument the wrong way.",
+    " In a third analogous color, write or draw LIBS, using the writing instrument the wrong way.",
 ];
 
 console.log(field05, field06, story3);
@@ -70,8 +70,3 @@ window.location.href = "results03.html";
 }
 
 
-
-// function playMadLibs() {
-  //going to grab user entry and store it in variables in JavaScript
-  //document.getElementById grabs HTML ids
-  //JavaScript is insanely case sensitive

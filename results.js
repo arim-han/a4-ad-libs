@@ -4,8 +4,11 @@ var currentLine = 0;
 
 function showNextLine() {
   if (currentLine < lines.length) {
-    document.getElementById("showStory").style.visibility = "visible";
-    document.getElementById("showStory").innerHTML += lines[currentLine] + "<br><br>";
+    var line = document.createElement("div");
+    line.textContent = lines[currentLine];
+
+    document.getElementById("showStory").appendChild(line);
     currentLine = currentLine + 1;
   }
 }
+
